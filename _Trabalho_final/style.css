@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #eee;
+    padding-top: 2%;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    /* 1º Valor (-)Esquerda e (+)Direita
+    2º valor (-)Cima e (+)Baixo
+    3º valor Suavidade */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+p{
+    color: #666; 
+}
+
+table{
+    width: 100%;
+   border-collapse: collapse
+}
+
+th, td{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th{
+    background-color: #a3a3a3;
+    color: white;
+}
+
+.anterior{
+    width: 10%;
+    font-weight: bold;
+    margin: 10px;
+}

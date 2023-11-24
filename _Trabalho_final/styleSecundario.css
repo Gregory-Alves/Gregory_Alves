@@ -1,0 +1,57 @@
+label, input{
+    display: inline-block;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+label{
+    width: calc(30%);
+    font-weight: bold;
+}
+
+input{
+    width: calc(70% - 30px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.botoes{
+    text-align: right;
+    margin-top: 20px;
+}
+
+button{
+    background-color: #1a67ec;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #103b85;
+}
+
+button[type="reset"]{
+    background-color: #06690d;
+}
+button[type="reset"]:hover{
+    background-color: #19491c;
+}   
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto; /* Três colunas com largura automática */
+    grid-gap: 10px; /* Espaçamento entre as células da grid */
+    padding: 20px; /* Espaçamento interno da grid container */
+}
+
+.grid-item {
+    background-color: #ffffff; /* Cor de fundo das células */
+    color: white; /* Cor do texto dentro das células */
+    text-align: center; /* Alinhamento do texto no centro das células */
+    padding: 20px; /* Espaçamento interno das células */
+    font-size: 18px; /* Tamanho do texto dentro das células */
+}

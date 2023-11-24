@@ -1,0 +1,72 @@
+<!--
+    1 - Eu mexi um pouco na estrutura da tabela no index pois todas as label e inputs estavam fora de Divs
+    2 - Eu não anexei as outras paginas html pois o meu trabalho foi feito diretamente no index do trabalho anterior
+    3 - Eu adicionei constantes no JS
+    4 - Criei a função de salvar
+    5 - Criei uma condição e um laço para só aceitar salvar quando a senha tiver mais de 8 caracteres e as duas senhas forem iguais
+    6 - Se as senhas forem diferentes ou tiverem menos de 8 caracteres aparece um pop-up na tela e os campos de senha ganham uma cor em volta sinalizando o campo onde deve ser mexido
+    7 - Com todos os campos preenchidos corretamente, a pagina salva os dados e envia um pop-up dizendo que foi realizado com sucesso
+    
+    
+
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleSecundario.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Trabalho web</title>
+
+</head>
+<body>
+    <main>
+   <div id="main-container">
+        <section>
+            <h1>Cadastro de Usuário</h1>
+            <nav>
+                <a href="#">Cadastro</a> |
+                <a href="#">Home</a> |
+                <a href="#">Relatórios</a> |
+                <a href="#">Produtos</a> 
+            </nav>
+        </section>
+        <p>Preencha o formulário</p>
+        <form id="form">
+        <div class="full-box">
+            <label for="nome">Nome:</label>
+            <input type="username" name="nome" id="nome" required>
+        </div>
+        <div class="full-box">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="full-box">
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required>
+        </div>
+        <div class="full-box">
+            <label for="confSenha">Confirmar Senha:</label>
+            <input type="password" name="confSenha" id="confSenha"autocomplete="off" required>
+        </div>
+        <div class="full-box">
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade" required>
+        </div>
+        <div class="full-box">
+            <label for="tel">Telefone:</label>
+            <input type="tel" name="tel" id="tel" autocomplete="tel" pattern="^[0-9]{4}-[0-9]{4}$" required>
+        </div>
+            <div class="botoes">
+                <button type="reset" class="laranja">Limpar</button>
+                <button type="submit" onclick="salvar()" id="btnSubmit">Salvar</button>
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+<script src="scripts.js">
+</script>
+</html>
