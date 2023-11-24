@@ -32,19 +32,19 @@ form.addEventListener("submit", (event) =>{
     var confSenha = document.getElementById("confSenha").value;
 
     while(senha.length < 8){
-        errorsenha();
+        senhaErrada();
         senhazinha(senha);
         return;
     }
-    
+ 
     if (confSenha !== senha){
-        errorsenha();
+        senhaErrada();
         alert("As senhas estão diferentes");
         return;
     }
 
     else{
-        success();
+        concluido();
         alert("Cadastro realizado!")
     }
 
@@ -54,18 +54,18 @@ form.addEventListener("submit", (event) =>{
 function senhazinha(){
     var senha = document.getElementById("senha").value;
     if(senha.length <8)
-    alert("Senha com menos de 8 caracteres");
+    alert("Sua senha tem que ter no minimo 8 caracteres");
     return;
 }
 
-function errorsenha(){
+function senhaErrada(){
     document.getElementById('confSenha').style.color = 'purple';
     document.getElementById('confSenha').style.border = '3px solid purple';
     document.getElementById('senha').style.color = 'purple';
     document.getElementById('senha').style.border = '3px solid purple';
 }
 
-function success(){
+function concluido(){
     document.getElementById('confSenha').style.color = '';
     document.getElementById('confSenha').style.border = '';
     document.getElementById('senha').style.color = '';
